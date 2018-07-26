@@ -17,7 +17,12 @@ namespace CG_3_4_Calculator
 
             /*This sets up the app to accept the first inputted number by
             setting the variable to be given by whomever is inputting and
-            for the code to include that into the equation.*/
+            for the code to include that into the equation.
+            Also, apparently whenever you get input from a user, the program
+            seems to deem it as a 'string' input.  Did NOT realize that.  
+            That took me near a half an hour to figure out and had to look onto
+            past assignment (read the rectangle assignment) to finally figure it out
+            after MUCH alterations*/
 
             var No1 = Console.ReadLine();
             int input1 = Convert.ToInt32(No1);
@@ -41,21 +46,30 @@ namespace CG_3_4_Calculator
                 Console.WriteLine(answeradd);
             }
 
-          /*  else if (operation == "subtract")
+            else if (operation == "subtract")
             {
-               var answersub = (No1 - No2);
+               var answersub = (input1 - input2);
                 Console.WriteLine(answersub);
             }
-
-
-
-            //Intially I forgot this little bit and when I ran the code, it came up with the numbers
-            //married and not added, so 13 instead of 4.  Oopps.
-
-            var answer = No1 + No2;
             
+            else if (operation == multiply)
+            {
+                var answermult = (input1 * input2);
+                Console.WriteLine(answermult);
+            }
 
-            Console.WriteLine(answer);*/
+            else if (operation = divide)
+            {
+                var answerdiv = (input1 / input2);
+                Console.WriteLine(answerdiv);
+            }
+
+            else
+            {
+                Console.WriteLine("Sorry. I did not understand you. You fail.")
+            }
+
+                       
             Console.ReadLine();
 
         }

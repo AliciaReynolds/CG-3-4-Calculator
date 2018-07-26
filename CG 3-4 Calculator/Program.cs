@@ -76,6 +76,9 @@ namespace CG_3_4_Calculator
                 Console.WriteLine($"Your answer is {answer}.");
             }
 
+            /*This option is if the user inputs something other then numbers or the operations listed*/
+
+
             else
             {
                 Console.WriteLine("Sorry. I did not understand you. You fail.");

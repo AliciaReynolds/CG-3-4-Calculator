@@ -46,6 +46,12 @@ namespace CG_3_4_Calculator
 
             var operation = Console.ReadLine();
 
+            /*If statements given for each option the user has to answer what operation they would like
+             to go with.  Those choices are then broken down and an answer is given.  Cannot figure out 
+             a way to shorten the code since it has both integers and strings within the code. Anything
+             that I used to try to alter to shorten the code has been met with angry red squiggles.*/
+
+
             if (operation == "add")
             {
                var answer = input1 + input2;

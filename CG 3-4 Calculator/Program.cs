@@ -33,6 +33,20 @@ namespace CG_3_4_Calculator
 
             var operation = Console.ReadLine();
 
+            if (operation == "add")
+            {
+                var answer = (No1 + No2);
+                Console.WriteLine(answer);
+            }
+
+            else if (operation == "subtract")
+            {
+                var answer = (No1 - No2);
+                Console.WriteLine(answer);
+            }
+
+
+
             //Intially I forgot this little bit and when I ran the code, it came up with the numbers
             //married and not added, so 13 instead of 4.  Oopps.
 

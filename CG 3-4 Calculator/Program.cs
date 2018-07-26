@@ -32,17 +32,18 @@ namespace CG_3_4_Calculator
             Console.WriteLine("You may choose one of the following: add, subtract, multiply, or divide.");
 
             var operation = Console.ReadLine();
-
+            
             if (operation == "add")
             {
-                var answer = (No1 + No2);
-                Console.WriteLine(answer);
+                var add = Convert.ToInt32(add);
+                var answeradd = (No1) + (No2);
+                Console.WriteLine(answeradd);
             }
 
-            else if (operation == "subtract")
+          /*  else if (operation == "subtract")
             {
-                var answer = (No1 - No2);
-                Console.WriteLine(answer);
+               var answersub = (No1 - No2);
+                Console.WriteLine(answersub);
             }
 
 
@@ -51,9 +52,9 @@ namespace CG_3_4_Calculator
             //married and not added, so 13 instead of 4.  Oopps.
 
             var answer = No1 + No2;
+            
 
-
-            Console.WriteLine(answer);
+            Console.WriteLine(answer);*/
             Console.ReadLine();
 
         }

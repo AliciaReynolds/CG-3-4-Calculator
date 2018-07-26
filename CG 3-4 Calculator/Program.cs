@@ -60,13 +60,13 @@ namespace CG_3_4_Calculator
 
             else if (operation == "divide")
             {
-                var answerdiv = (input1 / input2);
+                double answerdiv = (input1 / input2);
                 Console.WriteLine(answerdiv);
             }
 
             else
             {
-                Console.WriteLine("Sorry. I did not understand you. You fail.")
+                Console.WriteLine("Sorry. I did not understand you. You fail.");
             }
 
                        

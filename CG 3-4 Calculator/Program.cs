@@ -28,6 +28,11 @@ namespace CG_3_4_Calculator
 
             var No2 = Console.ReadLine();
 
+            Console.WriteLine("Thank you again for that. Now please choose the operation you would like to use.");
+            Console.WriteLine("You may choose one of the following: add, subtract, multiply, or divide.");
+
+            var operation = Console.ReadLine();
+
             //Intially I forgot this little bit and when I ran the code, it came up with the numbers
             //married and not added, so 13 instead of 4.  Oopps.
 

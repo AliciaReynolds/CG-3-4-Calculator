@@ -52,13 +52,13 @@ namespace CG_3_4_Calculator
                 Console.WriteLine(answersub);
             }
             
-            else if (operation == multiply)
+            else if (operation == "multiply")
             {
                 var answermult = (input1 * input2);
                 Console.WriteLine(answermult);
             }
 
-            else if (operation = divide)
+            else if (operation == "divide")
             {
                 var answerdiv = (input1 / input2);
                 Console.WriteLine(answerdiv);

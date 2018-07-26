@@ -12,8 +12,11 @@ namespace CG_3_4_Calculator
             Hope you don't mind a little fun*/
 
             Console.WriteLine("Welcome to Alici'a crazy adding machine.");
+            Console.WriteLine();
             Console.WriteLine("You pick the numbers and the operation and we'll give you an answer.");
+            Console.WriteLine();
             Console.WriteLine("First, please provide any number between 1 and a million.");
+            
 
             /*This sets up the app to accept the first inputted number by
             setting the variable to be given by whomever is inputting and
@@ -27,7 +30,9 @@ namespace CG_3_4_Calculator
             var No1 = Console.ReadLine();
             int input1 = Convert.ToInt32(No1);
 
+            Console.WriteLine();
             Console.WriteLine("Thank you! Now please provid a second number, again any number between 1 and a million.");
+            
 
             /*This is just like above, with setting the variable to be an inputted 
             number to be used later on in the coding for the calulator part*/
@@ -35,33 +40,34 @@ namespace CG_3_4_Calculator
             var No2 = Console.ReadLine();
             int input2 = Convert.ToInt32(No2);
 
+            Console.WriteLine();
             Console.WriteLine("Thank you again for that. Now please choose the operation you would like to use.");
             Console.WriteLine("You may choose one of the following: add, subtract, multiply, or divide.");
 
             var operation = Console.ReadLine();
-            
+
             if (operation == "add")
             {
-               var answeradd = input1 + input2;
-                Console.WriteLine(answeradd);
+               var answer = input1 + input2;
+                Console.WriteLine($"Your answer is {answer}.");
             }
 
             else if (operation == "subtract")
             {
-               var answersub = (input1 - input2);
-                Console.WriteLine(answersub);
+               var answer = (input1 - input2);
+                Console.WriteLine($"Your answer is {answer}.");
             }
             
             else if (operation == "multiply")
             {
-                var answermult = (input1 * input2);
-                Console.WriteLine(answermult);
+                var answer = (input1 * input2);
+                Console.WriteLine($"Your answer is {answer}.");
             }
 
             else if (operation == "divide")
             {
-                double answerdiv = (input1 / input2);
-                Console.WriteLine(answerdiv);
+                double answer = (input1 / input2);
+                Console.WriteLine($"Your answer is {answer}.");
             }
 
             else
